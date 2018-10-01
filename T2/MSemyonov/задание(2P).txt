@@ -1,0 +1,15 @@
+def arithmetic(a,b,c):
+    if (c=='+') | (c=='-') | (c=='/') | (c=='*'):
+        case={
+            '+': a+b,
+            '-': a-b,
+            '*': a*b,
+            '/': a/b,
+        }
+        print(case[c])
+    else:
+        print("unknown operation")
+a = int(input("Enter a "))
+b = int(input("Enter b"))
+c = input("choose operatoin: +,-,/,*")
+arithmetic(a,b,c)

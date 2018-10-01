@@ -1,0 +1,6 @@
+arr=input("enter the string - ")
+arr = arr.split()
+x=""
+for i in range(len(arr)) :
+     x+=arr[i]+"*"
+print (x)

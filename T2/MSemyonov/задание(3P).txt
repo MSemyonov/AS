@@ -1,0 +1,31 @@
+a=[]
+b=[]
+k=1
+n=int(input("Vvedite kolichestvo elementov:"))
+for i in range(n):
+    new = int(input("Vvedite %i element" %i))
+    a.append(new)
+print("Spisok:")
+print(a)
+for i in range(n):
+    if a[i] > 0:
+        b.append(a[i])
+j=0
+for i in b:
+    j += 1
+if j>=1:
+    print("Perviy polozhitelniy el-t:%i" %b[0])
+    k*=b[0]
+    if j>=3:
+        print("Tretiy polozhitelniy el-t:%i" %b[2])
+        k*=b[2]
+        if j>=6:
+            print("Shestoi polozhitelniy el-t:%i" %b[5])
+            k*=b[5]
+        else:
+            print("Menshe 6 polozhitelnih el-v")
+    else:
+        print("Menshe 3 polozhitelnih el-v")
+else:
+    print("Net polozhotelnih elementov")
+print("Proizvedenie: %i" %k)

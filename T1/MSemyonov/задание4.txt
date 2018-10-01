@@ -1,0 +1,11 @@
+x = int(input())
+y = x
+n = 0
+while y != 0:
+    y = y // 10
+    n += 1
+p = 0
+for i in range(n):
+    k = ((x//(10**(n-i-1)))%10)
+    p = p + k*(10**i)
+print (p)

@@ -1,0 +1,6 @@
+d = float ( input ( "D: "))
+h = float ( input ( "H: "))
+s = float ( input ( "S: "))
+m = 2*3.14*(d/2)*(2*h+(d/2))
+res = round(m/s)
+print ("rezultat=",res)
